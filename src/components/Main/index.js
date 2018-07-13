@@ -1,16 +1,20 @@
 import React from 'react';
 
+import DogCards from '../DogCards/index';
+
 const Main = props => {
-    const dogSections = props.dogs.map(prop => {
+    const dogSections = props.dogs.map(dog => {
         return (
-          <div className="card col-xs-12 col-sm-6 col-md-4" key={prop.id}>
-            <img className="card-img-top" src={prop.imageUrl} alt={prop.name}></img>
-            <div className="card-body">
-              <h5 className="card-title">{prop.name}</h5>
-              <p className="card-text">{prop.description}</p>
-              <a href="#" className="btn btn-primary">{prop.imageCaption}</a>
-            </div>
-          </div>
+            <DogCards 
+            
+                id={dog.id} 
+                imageUrl={dog.imageUrl}
+                name={dog.name}
+                description={dog.description}
+                imageCaption={dog.imageCaption}
+            
+            />
+          
         )
       })
     return (

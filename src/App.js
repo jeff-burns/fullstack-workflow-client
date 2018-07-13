@@ -27,10 +27,7 @@ class App extends Component {
       <div>
         <Header />
         <Main dogs={this.state.dogs}
-            
-        
         />
-        
       </div>
     );
   }
@@ -39,8 +36,3 @@ class App extends Component {
 export default App;
 
 
-// id={this.state.dogs.id} 
-// imageUrl={this.state.dogs.imageUrl}
-// name={this.state.dogs.name}
-// description={this.state.dogs.description}
-// imageCaption={this.state.dogs.imageCaption}
