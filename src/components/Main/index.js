@@ -6,15 +6,12 @@ const Main = props => {
     const dogSections = props.dogs.map(dog => {
         return (
             <DogCards 
-            
                 id={dog.id} 
                 imageUrl={dog.imageUrl}
                 name={dog.name}
                 description={dog.description}
                 imageCaption={dog.imageCaption}
-            
             />
-          
         )
       })
     return (
